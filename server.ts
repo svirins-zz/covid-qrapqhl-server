@@ -32,7 +32,12 @@ const server = new ApolloServer({
 
 })
 
-const cors = microCors()
+const cors = microCors({
+  allowMethods: ['POST','GET','PUT','PATCH','DELETE','OPTIONS'],
+  allowHeaders: ['X-Requested-With','Access-Control-Allow-Origin','X-HTTP-Method-Override','Content-Type','Authorization','Accept'],
+  allowCredentials: true, 
+  origin: '*'
+})
 
 const handler = server.createHandler({ path: '/' })
 
