@@ -14,5 +14,9 @@
   },
   "scripts": {
     "generate": "graphql-codegen --config codegen.yml"
+  },
+  "volta": {
+    "node": "12.20.1",
+    "yarn": "1.22.10"
   }
 }
