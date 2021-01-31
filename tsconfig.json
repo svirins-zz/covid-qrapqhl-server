@@ -1,8 +1,19 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2020",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "moduleResolution": "node"
-  }
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "removeComments": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./api",
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }

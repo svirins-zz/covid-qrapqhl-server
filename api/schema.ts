@@ -29,7 +29,6 @@ input DateInput {
 type Query {
   results(countries: [String], date: DateInput): [Result]
   result (country: String!, date: String): Result
-
   countries (names: [String]): [Country]
   country (name: String): Country
 }

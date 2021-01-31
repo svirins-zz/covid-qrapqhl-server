@@ -5,4 +5,5 @@ node_modules
 .nuxt
 .next
 yarn-error.log
+
 .vercel

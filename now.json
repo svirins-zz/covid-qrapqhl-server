@@ -1,9 +1,3 @@
 {
-  "public": true,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "api/index.ts"
-    }
-  ]
+  "public": true
 }

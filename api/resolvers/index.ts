@@ -1,6 +1,6 @@
+import Query from './query'
+import Result from './result'
 import { Resolvers } from './types'
-import Query from './Query'
-import Result from './Result'
 
 const resolvers: Resolvers = {
   Query,

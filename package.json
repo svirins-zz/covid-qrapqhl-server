@@ -2,14 +2,10 @@
   "dependencies": {
     "apollo-server-micro": "^2.19.1",
     "date-fns": "^2.16.1",
-    "global": "^4.4.0",
-    "graphql": "15.3.0",
+    "graphql": "^15.5.0",
     "micro-cors": "^0.1.1"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.20.0",
-    "@graphql-codegen/typescript": "1.20.0",
-    "@graphql-codegen/typescript-resolvers": "1.18.1",
     "@types/micro-cors": "^0.1.1"
   },
   "scripts": {
