@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "apollo-server-micro": "^2.19.1",
+    "apollo-server-micro": "^2.19.2",
     "date-fns": "^2.16.1",
     "graphql": "^15.5.0",
     "micro-cors": "^0.1.1"
