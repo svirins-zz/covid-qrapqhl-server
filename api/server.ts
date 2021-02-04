@@ -48,7 +48,7 @@ const cors = microCors({
   origin: "*",
 });
 
-const handler = server.createHandler({ path: "/api/server" });
+const handler = server.createHandler({ path: "/" });
 
 export default cors((req, res) =>
   req.method === "OPTIONS" ? res.end() : handler(req, res),
