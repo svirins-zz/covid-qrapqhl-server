@@ -1,9 +1,10 @@
-import { QueryResolvers } from './types'
 import { ApolloError } from 'apollo-server-micro'
 
-const formatDate = (d: Date) => `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`
+import { QueryResolvers } from './types'
 
-const getGrowthRate = (index: number, results: any) => {
+const formatDate = d => `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`
+
+const getGrowthRate = (index, results) => {
   if (index === 0) {
     return 0
   }
@@ -15,7 +16,7 @@ const getGrowthRate = (index: number, results: any) => {
   return (currentResult.confirmed - prevResult.confirmed) / prevResult.confirmed
 }
 
-const resolvers: QueryResolvers = {
+const resolvers = {
   async results(_parent, { countries, date }, { getResults }) {
     const results = await getResults()
     const eq = date && date.eq ? formatDate(new Date(date.eq)) : null
